@@ -12,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
+        android:clickable="false"
         android:text="Welcome to Tech Trivia"
         android:textColor="#2196F3"
         android:textSize="20dp"
