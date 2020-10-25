@@ -40,25 +40,25 @@
                 android:id="@+id/radio1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Option 1" />
+                android:text="Radio 1" />
 
             <RadioButton
                 android:id="@+id/radio2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Option 2" />
+                android:text="Radio 2" />
 
             <RadioButton
                 android:id="@+id/radio3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Option 3" />
+                android:text="Radio 3" />
 
             <RadioButton
                 android:id="@+id/radio4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Option 4" />
+                android:text="Radio 4" />
         </RadioGroup>
 
     </LinearLayout>
@@ -68,7 +68,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="333dp"
+        android:layout_marginTop="400dp"
         android:layout_marginEnd="5dp"
         android:backgroundTint="#2196F3"
         android:text="Next"
