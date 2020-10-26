@@ -1,9 +1,11 @@
 package com.example.karanpatel_trivia
-
+//991519115 Karan Patel A2
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.example.karanpatel_trivia.database.Question
+import com.example.karanpatel_trivia.database.QuestionViewModel
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -20,10 +22,9 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-    fun getQuiz(){
+    private fun getQuiz(){
         var viewModel = QuestionViewModel(this.application)
-
-        viewModel.insertQuestion(Question("What does WWW stand for?","Wild  Wacky  Webalicious","Wild Wild Web","World Wide Web","World Water War","World Wide Web",0))
+        viewModel.insertQuestion(Question("What does WWW stand for?","Wild Wacky Webalicious","Wild Wild Web","World Wide Web","World Water War","World Wide Web",0))
         viewModel.insertQuestion(Question("What is a portable + battery powered computer?","Trackbook","Desktop","Modem","Laptop","Laptop",0))
         viewModel.insertQuestion(Question("Wireless Internet is also called?","WiFi","WeFe","HiFi","HiFe","WiFi",0))
         viewModel.insertQuestion(Question("A small, portable electronic device used to perform calculations?","Computer","Cell Phone","IPad","Calculator","Calculator",0))
@@ -35,8 +36,6 @@ class MainActivity : AppCompatActivity() {
         viewModel.insertQuestion(Question("What year did the iPhone launch?","2007","2009","2006","2010","2007",0))
         val quizIntent = Intent(this,QuizActivity::class.java)
         startActivity(quizIntent)
-
-
     }
 
 }
